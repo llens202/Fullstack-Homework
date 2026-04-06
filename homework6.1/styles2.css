@@ -1,0 +1,14 @@
+table {
+            border-collapse: collapse; /* Прибирає подвійні рамки */
+            width: 500px;
+            height: 500px;
+            border: 10px solid black;
+            background-color: black; /* Колір ліній між клітинками */
+        }
+
+        td {
+            border: 5px solid black; /* Товщина внутрішніх ліній */
+             background-color: white;/* Колір за замовчуванням */
+        }
+
+

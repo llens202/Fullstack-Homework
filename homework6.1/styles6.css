@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+
+
+.container:nth-child(1) .content {
+    background-color: green;
+}
+.container:nth-child(2) .content {
+    background-color: blue;
+}
+.container:nth-child(3) .content {
+    background-color: gray;
+}
+.container:nth-child(4) .content {
+    background-color: red;
+}
+.container:nth-child(5) .content {
+    background-color: yellow;
+}
+
+.content {
+    height: 100px;  
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}

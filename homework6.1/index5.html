@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица в стиле Мондриана</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 500px;
+            height: 500px;
+            border: 8px solid black;
+            background-color: black; /* Цвет сетки */
+        }
+
+        td {
+            border: 4px solid black; /* Толщина внутренних линий */
+            padding: 0;
+        }
+
+        /* Цвета */
+        .white  { background-color: #ffffff; }
+        .red    { background-color: #ff0000; }
+        .yellow { background-color: #ffdb00; }
+        .blue   { background-color: #0000ff; }
+        .black  { background-color: #000000; }
+
+        /* Настройка размеров ячеек для асимметрии */
+        .col-small { width: 15%; }
+        .col-mid   { width: 25%; }
+        .col-large { width: 45%; }
+    </style>
+</head>
+<body>
+
+    <table>
+        <!-- Ряд 1 -->
+        <tr>
+            <td class="white col-small" style="height: 50px;"></td>
+            <td colspan="2" class="white"></td>
+            <td colspan="2" class="yellow col-large"></td>
+        </tr>
+        
+        <!-- Ряд 2 (Начало большого красного квадрата) -->
+        <tr>
+            <td rowspan="2" class="white"></td>
+            <td rowspan="2" colspan="2" class="red"></td>
+            <td class="white" style="height: 100px;"></td>
+            <td class="white"></td>
+        </tr>
+        
+        <!-- Ряд 3 -->
+        <tr>
+            <td class="white" style="height: 120px;"></td>
+            <td rowspan="2" class="white"></td>
+        </tr>
+
+        <!-- Ряд 4 (Черный квадрат и синий блок) -->
+        <tr>
+            <td class="white"></td>
+            <td class="black" style="height: 80px;"></td>
+            <td class="white"></td>
+            <td rowspan="2" class="blue"></td>
+        </tr>
+
+        <!-- Ряд 5 (Низ: желтый, белый, синий, красный) -->
+        <tr>
+            <td class="yellow" style="height: 60px;"></td>
+            <td class="white"></td>
+            <td class="white"></td>
+            <td class="red" style="width: 10px;"></td>
+        </tr>
+    </table>
+
+</body>
+</html>
